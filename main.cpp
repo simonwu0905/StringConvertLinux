@@ -1,11 +1,11 @@
-#include <QCoreApplication>
-#include <QDebug>
+//#include <QCoreApplication>
+//#include <QDebug>
 #include "character.h"
-#include "iostream"
+#include <iostream>
 using namespace std;
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
+    //QCoreApplication a(argc, argv);
     string source,target;
     Character character;
     while(true)
@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
            <<"Minimum convertion number is "<<character.minDistance(source,target)<<endl
           <<"\n###############################\n"<<endl;
     }
-    return a.exec();
+    //return a.exec();
+    return 0;
 }
 
